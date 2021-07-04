@@ -1,0 +1,563 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"backgou",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin-top\tproperty"
+			],
+			[
+				"bor",
+				"border-box\tbox-sizing"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"z",
+				"z-index\tproperty"
+			],
+			[
+				"padding",
+				"padding-bottom\tproperty"
+			],
+			[
+				"pa",
+				"padding-top\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"d",
+				"display\tproperty"
+			],
+			[
+				"box",
+				"box-sizing\tproperty"
+			],
+			[
+				"hide",
+				"hide_171022"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"border",
+				"border-box〔value〕"
+			],
+			[
+				"back",
+				"background-color: 〔property〕"
+			],
+			[
+				"background",
+				"background-image: 〔property〕"
+			],
+			[
+				"list-sty",
+				"list-style-type: 〔property〕"
+			],
+			[
+				"swe",
+				"sweet-alert.css"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 357.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"utf",
+				"ConvertToUTF8: Reload with Encoding"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"SublimeCodeIntel: Disable Live Autocompletion"
+			],
+			[
+				"py",
+				"Build With: Python"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = ‘7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0’; pf = 'Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(’ ’, ’%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb’ ).write(by)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/fkabasawa/Documents/GitHub/firebase_practice/public/index.html",
+		"/C/Users/fkabasawa/Documents/GitHub/firebase_practice/public/index.sublime-project",
+		"/C/Users/fkabasawa/Documents/GitHub/firebase_practice/firebase.json",
+		"/C/Users/fkabasawa/Desktop/firebase/public/index.html",
+		"/C/Users/fkabasawa/Documents/GitHub/desktop-tutorial/README.md",
+		"/C/Users/fkabasawa/Desktop/firebase/package.json",
+		"/C/Users/fkabasawa/Desktop/firebase/index.html",
+		"/C/Users/fkabasawa/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/fkabasawa/Desktop/hatena.css",
+		"/C/Users/fkabasawa/Desktop/hatena.script.html",
+		"/C/Users/fkabasawa/Desktop/css.css",
+		"/C/Users/fkabasawa/AppData/Local/Microsoft/Photo Acquisition/PreviouslyAcquired.db",
+		"/C/Users/fkabasawa/Desktop/python/20180627/sample.py",
+		"/C/Users/fkabasawa/AppData/Roaming/Sublime Text 3/Packages/User/Python36.sublime-build",
+		"/C/Users/fkabasawa/Desktop/python/20180626/sample.py",
+		"/C/Users/fkabasawa/Desktop/user-report-export.json",
+		"/C/Users/fkabasawa/Creative Cloud Files/AT/01.ローカルコーディング/結果.html",
+		"/C/Users/fkabasawa/Creative Cloud Files/AT/01.ローカルコーディング/css/justyourvoice_result.css",
+		"/C/Users/fkabasawa/Desktop/仕事/BCBG/20180112/HTML/release/event.html",
+		"/C/Users/fkabasawa/Desktop/仕事/BCBG/20180112/HTML/release/factory.html",
+		"/C/Users/fkabasawa/Desktop/仕事/BCBG/20180112/HTML/release/mail/20180115/index.html",
+		"/C/Users/fkabasawa/Desktop/仕事/BCBG/20180112/HTML/release/test/factory.html",
+		"/C/Users/fkabasawa/Desktop/仕事/BCBG/20180112/HTML/release/test/event.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20180104/HTML/release/test/calendar2017.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20180104/HTML/release/calendar2017.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20180104/HTML/release/test/calendar2017.css",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20180104/HTML/release/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20180104/HTML/release/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171227/HTML/release/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171227/HTML/release/event.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171227/HTML/release/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171227/HTML/release/mail/20180101/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171227/HTML/release/test/event.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171227/HTML/release/test/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171227/HTML/release/test/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171227/HTML/release/mail/20171227/index.html",
+		"/C/Users/fkabasawa/AppData/Local/Temp/ffftp0000189c/file/factory.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171226/HTML/release/factory.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171226/HTML/release/test/factory.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171221/release/calendar2017.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171221/release/test/calendar2017.css",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171221/release/test/calendar2017.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171215/HTML/release/test/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171215/HTML/release/test/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171215/HTML/release/test/event.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171215/HTML/release/mail/20171218/index.html",
+		"/C/Users/fkabasawa/AppData/Local/Temp/ffftp00001564/file/mailmagazine.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171215/HTML/release/factory.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171215/HTML/release/test/js/script.js",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171215/HTML/release/test/factory.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171212-2/release/header.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171212-2/release/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171212-2/release/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171212-2/release/css/top.css",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171212-2/release/css/common.css",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171212-2/release/test/css/style.css",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171212-2/release/test/css/common.css",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171212-2/release/test/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171212-2/release/test/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171213/HTML/release/test/css/style.css",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171212-2/release/test/header.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171213/HTML/release/test/membership.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171212/HTML/release/factory.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171212/HTML/release/event.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171212/HTML/release/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171212/HTML/release/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171211/HTML/re/calendar2017.html",
+		"/C/Users/fkabasawa/Creative Cloud Files/local/calendar2017.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171211/HTML/re/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171211/HTML/re/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171211/HTML/re/header.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171211/HTML/re/footer.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171211/HTML/re/test/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171211/HTML/re/test/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171207/HTML/release/header.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171207/HTML/release/footer.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171201/HTML/release/test/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171201/HTML/release/test/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171127-2/HTML/release/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171127-2/HTML/release/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171127-2/HTML/release/test/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171127-2/HTML/release/test/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171127/release/factory.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171116/HTML/release/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171116/HTML/release/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171116/HTML/release/factory.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171116/HTML/release/test/factory.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171116/HTML/release/test/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171116/HTML/release/test/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171114/HTML/release/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171114/HTML/release/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171114/HTML/release/mail/20171115/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171114/HTML/release/test/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171114/HTML/release/test/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171110/HTML/release/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171110/HTML/release/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171110/HTML/release/event.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171110/HTML/release/test/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171110/HTML/release/test/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171110/HTML/release/test/event.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171102/HTML/release/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171102/HTML/release/event.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171102/HTML/release/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171102/HTML/release/test/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171102/HTML/release/test/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171102/HTML/release/mail/20171102/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171102/HTML/bk/test/index.php",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171102/HTML/bk/test/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171102/HTML/bk/test/event.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171102/HTML/release/test/css/style.css",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171102/HTML/bk/index.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171102/HTML/bk/event.html",
+		"/C/Users/fkabasawa/Desktop/work/bcbg/20171102/HTML/bk/index.php",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171031/HTML/release/factory.html",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171031/HTML/release/test/factory.html",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171026/HTML/release/test/index.html",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171026/HTML/release/test/index.php",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171022/HTML/release/index.html",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171022/HTML/release/index.php",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171022/HTML/release/event.html",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171022/HTML/release/test/index.html",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171022/HTML/release/test/index.php",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171004/release/index.html",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171022/HTML/release/test/event.html",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171017/HTML/release/index.php",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171017/HTML/release/index.html",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171018/HTML/mail/20171018/index.html",
+		"/C/Users/fkabasawa/Desktop/bcbg/20171017/HTML/release/test/index.html"
+	],
+	"find":
+	{
+		"height": 49.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"h2",
+			"style",
+			"load",
+			"firebase/init",
+			"firebase-app",
+			"<img border=\"0\"",
+			"楽天",
+			"UQ",
+			"h2",
+			"font-fa",
+			"font",
+			"family",
+			"20px",
+			"{content",
+			".entry .entry-header",
+			".page-entry #container #content #main",
+			"2",
+			"20",
+			"1",
+			"18",
+			"ntent:\"1",
+			"18",
+			".\"",
+			"1",
+			"ul.table-of-contents ul",
+			"#789dae",
+			"related-entries-item",
+			"urllist-item related-entries-item",
+			".urllist-with-thumbnails li .urllist-image",
+			".hatena-urllist.urllist-with-thumbnails",
+			".hatena-module-title",
+			".archive-entries",
+			"ul.entries-access-ranking",
+			"entries-access-ranking",
+			"$",
+			".entry-header",
+			"content",
+			"245,245,245,1);",
+			"conte",
+			"64px",
+			"contai",
+			"$",
+			"  ",
+			".pager-permalink.permalink",
+			"section.archive-entry.autopagerize_page_element ",
+			"/*",
+			"45deg",
+			"45",
+			"</p></div>",
+			"\"><img src=\"",
+			"<div class=\"imagearea\"><a href=\"",
+			"</p></div>",
+			"\"><img src=\"/",
+			"\t            \t<div class=\"imagearea\"><a href=\"",
+			"</p></div>",
+			"\"><img src=\"/",
+			"\t            \t<div class=\"imagearea\"><a href=\"",
+			"/\n",
+			"\t            \t<div class=\"imagearea\"><a href=\"",
+			"\t            </div>\t\t\n",
+			"\t            </div>\t\t\n            </li>\n\n            <li>\t\t\t\n\t            <div class=\"box\">\t\n\t\t<div class=\"imagearea\">",
+			"\t            </div>\t\t\n            </li>\n\n            <li>\t\t\t\n\t            <div class=\"box\">\t\n\t\t<div class=\"imagearea\">\n",
+			"</p></div>\t\t",
+			"\"><img src",
+			"<a href=\"",
+			"（複数回答可）",
+			"05",
+			"%",
+			".grapgh_.",
+			"grapgh_",
+			"8",
+			".grapgh_ ",
+			"bar_\"",
+			"</span",
+			"grapgh_ ul",
+			"bar",
+			"<span class=\"item_\"></span>",
+			"{}",
+			"\t\n",
+			"item",
+			"<span></span>",
+			"\"\">",
+			"<li><span>",
+			"<li><span></span>",
+			"\t",
+			"<img src=\"img/usr/justyourvoice_result/",
+			"<img src=\"img/usr/justyourvoice_result/pc/answer",
+			"180101",
+			"nr",
+			"http://bcbgmaxazria.jp/",
+			"180101",
+			"factory180101",
+			"show_180115",
+			"【CLOSE SALE】店内商品がすべて70％OFF！",
+			"\t\t  <td>&nbsp;</td>",
+			"name\"",
+			"年末年始営業時間のお知らせ",
+			"2017",
+			"171218",
+			"171218\"",
+			"171218",
+			"false171231",
+			"2016",
+			"false171231",
+			"http:",
+			"true171218",
+			"2016",
+			"112",
+			"110",
+			"false171231",
+			"true171218",
+			"2016",
+			"171115",
+			"171128",
+			"show_171128",
+			"\t\t\t<li><a href=\"#\"><img src=\"img/top/m_171127_1.jpg\" alt=\"\"></a></li>",
+			"show_171128",
+			"2017",
+			"common",
+			"main",
+			"9:00",
+			"20:00",
+			"headnav_sp",
+			"form_sp",
+			"calendar",
+			"thickbox",
+			"営業時間のお知らせ",
+			"年末年始の営業時間のお知らせ"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\\t",
+			"",
+			"160615",
+			"160615_",
+			"160615",
+			"src=\"http://curtain-value.jp/",
+			"href=\"http://curtain-value.jp/",
+			"http://image.rakuten.co.jp/ace-store/cabinet/itemimg/ace/",
+			"href=\"http://www.flight001.jp/",
+			"src=\"http://www.flight001.jp/",
+			"src=\"http://www.noce.co.jp/",
+			"href=\"http://www.noce.co.jp/",
+			"",
+			"href=\"http://curtain-value.jp/",
+			"src=\"http://curtain-value.jp/",
+			"\t",
+			"",
+			"jpg",
+			"http://image.rakuten.co.jp/ace-store/cabinet/manual/ace",
+			"http://shopping.c.yimg.jp/lib/aceonlinestore/",
+			"jpg",
+			"src=\"http://image.rakuten.co.jp/ace-store/cabinet/tsa/ace"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 186.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
