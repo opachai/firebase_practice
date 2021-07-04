@@ -26,12 +26,12 @@
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      #message h1 { margin: 0 0 16px; }
+      #message h2 { margin: 16px 0 8px;}
+      #message div {margin-bottom: 24px;}
+      #message p { margin: 8px 0; }
+      #message code {background-color: #eee; display: block; padding: 10px; border: 1px solid #ddd; border-radius: 3px;margin-bottom: 8px;}
+      #message { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
       @media (max-width: 600px) {
         body, #message { margin-top: 0; background: white; box-shadow: none; }
         body { border-top: 16px solid #ffa100; }
@@ -40,12 +40,32 @@
   </head>
   <body>
     <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+      <h1>Firebase Practice</h1>
+      <h2>2021.7.4 SUN</h2>
+      <div>
+        <ul>
+          <li>プレビューからデプロイ</li>
+          <li>GitHub環境構築</li>
+          <li>デプロイ時のコミット</li>
+        </ul>
+        <p>参照：<a href="https://firebase.google.com/docs/hosting/test-preview-deploy?hl=ja">https://firebase.google.com/docs/hosting/test-preview-deploy?hl=ja</a></p>
+        <h3>学んだこと</h3>
+        <p></p>
+        <h4>プレビュー</h4>
+        <code>firebase emulators:start</code>
+        <span>プレビューページのURLはhttp://localhost:5000</span>
+        <h4>プレビューの終了</h4>
+        <code>ctrl &#043; c</code>
+        <h4>プレビューして共有</h4>
+        <code>firebase hosting:channel:deploy PROJECT_ID</code>
+        <h4>プレビューして共有の終了</h4>
+        <p>firebaseの管理画面 &gt; Hosting から</p>
+        <h4>デプロイ</h4>
+        <code>firebase deploy</code>
+        <p>コメント付き</p>
+        <code>firebase deploy -m "COMMENT HERE"</code>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
