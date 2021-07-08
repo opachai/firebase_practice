@@ -8,15 +8,15 @@
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/8.7.0/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.7.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.7.0/firebase-database.js"></script>
+    <!-- <script defer src="/__/firebase/8.7.0/firebase-auth.js"></script> -->
+    <!-- <script defer src="/__/firebase/8.7.0/firebase-database.js"></script> -->
     <script defer src="/__/firebase/8.7.0/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.7.0/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.7.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.7.0/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.7.0/firebase-analytics.js"></script>
-    <scriptd efer src="/__/firebase/8.7.0/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.7.0/firebase-performance.js"></script>
+    <!-- <script defer src="/__/firebase/8.7.0/firebase-functions.js"></script> -->
+    <!-- <script defer src="/__/firebase/8.7.0/firebase-messaging.js"></script> -->
+    <!-- <script defer src="/__/firebase/8.7.0/firebase-storage.js"></script> -->
+    <!-- <script defer src="/__/firebase/8.7.0/firebase-analytics.js"></script> -->
+    <!-- <scriptd efer src="/__/firebase/8.7.0/firebase-remote-config.js"></script> -->
+    <!-- <script defer src="/__/firebase/8.7.0/firebase-performance.js"></script> -->
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
@@ -26,104 +26,87 @@
     <script defer src="js/org-firestore.js"></script>
 
     <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 15px; display: flex;}
-      .messages { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      h1 { margin: 0 0 15px; }
-      .messages h2 { margin: 16px 0 8px;}
-      .messages div {margin-bottom: 24px;}
-      .messages p { margin: 8px 0; }
-      .messages code {background-color: #eee; display: block; padding: 10px; border: 1px solid #ddd; border-radius: 3px;margin-bottom: 8px;}
-      .messages { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 15px;max-width:  100%; overflow: scroll;}
+      .inner { display: flex; flex-wrap: wrap; }
+      .section { background: white; max-width: 360px; margin: 10px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      h1 { margin: 0 0 15px; width:  100%;}
+      .section h2 { margin: 16px 0 8px;}
+      .section div {margin-bottom: 24px;}
+      .section p { margin: 8px 0; }
+      .section code {background-color: #eee; display: block; padding: 10px; border: 1px solid #ddd; border-radius: 3px;margin-bottom: 8px;}
+      .section { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
       @media (max-width: 600px) {
-        body, .messages { margin-top: 0; background: white; box-shadow: none; }
+        body, .section { margin-top: 0; background: white; box-shadow: none; }
         body { border-top: 16px solid #ffa100; }
       }
     </style>
   </head>
   <body>
     <h1>Firebase Practice</h1>
-    <div class="messages">
-      <h2>2021.7.4 SUN</h2>
-      <div>
-        <ul>
-          <li>プレビューからデプロイ</li>
-          <li>GitHub環境構築</li>
-          <li>デプロイ時のコミット</li>
-        </ul>
-        <p>参照：<a href="https://firebase.google.com/docs/hosting/test-preview-deploy?hl=ja">https://firebase.google.com/docs/hosting/test-preview-deploy?hl=ja</a></p>
-        <h3>学んだこと</h3>
-        <p></p>
-        <h4>プレビュー</h4>
-        <code>firebase emulators:start</code>
-        <span>プレビューページのURLはhttp://localhost:5000</span>
-        <h4>プレビューの終了</h4>
-        <code>ctrl &#043; c</code>
-        <h4>プレビューして共有</h4>
-        <code>firebase hosting:channel:deploy PROJECT_ID</code>
-        <h4>プレビューして共有の終了</h4>
-        <p>firebaseの管理画面 &gt; Hosting から</p>
-        <h4>デプロイ</h4>
-        <code>firebase deploy</code>
-        <p>コメント付き</p>
-        <code>firebase deploy -m "COMMENT HERE"</code>
+    <div class="inner">
+      <div class="section">
+        <h2>次回以降にやりたいこと</h2>
+        <ul>ドキュメントの追加（単一・複数）</ul>
+        <ul>ドキュメントの修正（単一・複数）</ul>
+        <ul>ドキュメントの削除（単一・複数）</ul>
       </div>
-    </div>
-    <div class="messages">
-      <h2>2021.7.5 MON</h2>
-      <div>
+      <div class="section">
+        <h2>2021.7.8 THU</h2>
         <ul>
-          <li>Firestore</li>
-          <li>書き込み・読み込み</li>
+          <li>フロントからコレクションは参照できない</li>
+          <li>ドキュメントの参照（単一）</li>
+          <li>ドキュメントの参照（全て）</li>
+          <li>ドキュメントの参照（絞り込み）</li>
         </ul>
         <h3>学んだこと</h3>
-        <p>JSファイルにて記載</p>
-        <h4>コレクションに追加/上書き</h4>
-        <code>db.collection('sample').doc(document).set(data)</code>
-        <span>※documentを指定する必要がある</span>
-        <h4>コレクションに追加(documentは自動採番され追加)</h4>
-        <code>db.collection('sample').add(data)</code>
-        <h4>コレクションを参照</h4>
-        <code>firebase hosting:channel:deploy PROJECT_ID</code>
+        <p>JSに記載</p>
+        <h4>ドキュメントの参照（単一）</h4>
+        <code>db.collection('collection id').doc('doc id').get()</code>
+        <h4>ドキュメントの参照（複数）</h4>
+        <code>db.collection('collection id').get()</code>
+        <h4>ドキュメントの参照（単一）</h4>
+        <code>db.collection('collection id').where('condition','comparison','value').get()</code>
+      </div>
+      <div class="section">
+        <h2>2021.7.5 MON</h2>
+          <ul>
+            <li>Firestore</li>
+            <li>書き込み・読み込み</li>
+          </ul>
+          <h3>学んだこと</h3>
+          <p>JSファイルにて記載</p>
+          <h4>コレクションに追加/上書き</h4>
+          <code>db.collection('sample').doc(document).set(data)</code>
+          <span>※documentを指定する必要がある</span>
+          <h4>コレクションに追加(documentは自動採番され追加)</h4>
+          <code>db.collection('sample').add(data)</code>
+          <h4>コレクションを参照</h4>
+          <code>firebase hosting:channel:deploy PROJECT_ID</code>
+        </div>
+      <div class="section">
+        <h2>2021.7.4 SUN</h2>
+          <ul>
+            <li>プレビューからデプロイ</li>
+            <li>GitHub環境構築</li>
+            <li>デプロイ時のコミット</li>
+          </ul>
+          <p>参照：<a href="https://firebase.google.com/docs/hosting/test-preview-deploy?hl=ja">https://firebase.google.com/docs/hosting/test-preview-deploy?hl=ja</a></p>
+          <h3>学んだこと</h3>
+          <p></p>
+          <h4>プレビュー</h4>
+          <code>firebase emulators:start</code>
+          <span>プレビューページのURLはhttp://localhost:5000</span>
+          <h4>プレビューの終了</h4>
+          <code>ctrl &#043; c</code>
+          <h4>プレビューして共有</h4>
+          <code>firebase hosting:channel:deploy PROJECT_ID</code>
+          <h4>プレビューして共有の終了</h4>
+          <p>firebaseの管理画面 &gt; Hosting から</p>
+          <h4>デプロイ</h4>
+          <code>firebase deploy</code>
+          <p>コメント付き</p>
+          <code>firebase deploy -m "COMMENT HERE"</code>
       </div>
     </div>
-
-<!--     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script> -->
   </body>
 </html>
