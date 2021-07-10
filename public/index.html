@@ -3,11 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title>Firebase Practice</title>
 
-    <!-- update the version number as needed -->
     <script defer src="/__/firebase/8.7.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
     <!-- <script defer src="/__/firebase/8.7.0/firebase-auth.js"></script> -->
     <!-- <script defer src="/__/firebase/8.7.0/firebase-database.js"></script> -->
     <script defer src="/__/firebase/8.7.0/firebase-firestore.js"></script>
@@ -27,6 +25,7 @@
     <script defer src="js/firestore-variable.js"></script>
     <script defer src="js/firestore-getdata.js"></script>
     <script defer src="js/firestore-setdata.js"></script>
+    <script defer src="js/firestore-realtimeupdate.js"></script>
 
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 15px;max-width:  100%; overflow: scroll;}
@@ -38,8 +37,9 @@
       .section p { margin: 8px 0; }
       .section code {background-color: #eee; display: block; padding: 10px; border: 1px solid #ddd; border-radius: 3px;margin-bottom: 8px;}
       .section { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      .section .addcollection {width:  100%;}
+      .section #post_data {width:  100%;}
       input,textarea,button { width: 100%; padding: 10px; margin-bottom: 15px; display: block; box-sizing: border-box;}
+      button {font-weight: bold;}
       @media (max-width: 600px) {
         body, .section { margin-top: 0; background: white; box-shadow: none; }
         body { border-top: 16px solid #ffa100; }
@@ -50,121 +50,43 @@
     <h1>Firebase Practice</h1>
     <div class="inner">
       <div class="section">
-        <h2>コレクションへの書き込みフォーム</h2>
-        <div class="addcollection">
+        <h2>ドキュメントの追加・更新</h2>
+        <div id="post_data">
+          <input name="doc_id" type="text" placeholder="ドキュメントID（未指定で新規追加）" autocomplete="on" list="doc_id">
+          <datalist id="doc_id"></datalist>
           <input name="date" type="date" placeholder="見出し">
           <input name="title" type="text" placeholder="見出し">
           <textarea rows="10" cols="60" placeholder="コード"></textarea>
           <input name="text" type="text" placeholder="説明・補足">
-          <button>コレクションに追加</button>
+          <button>ドキュメントの追加・更新</button>
         </div>
       </div>
       <div class="section">
         <h2>次回以降にやりたいこと</h2>
         <ul>
-          <li>set / add / update の使い分けを実際にソースを書いて</li>
-          <li>コレクションの更新をリアルタイム検知</li>
-          <li>HTMLの内容をDBに移管</li>
-          <li>Vue / React を用いてDBのソースをフロント生成</li>
-          <li>簡易検索エンジン</li>
+          <li>
+            学習の可視化<br>
+            <ul>
+              <li>ドキュメントごとにかかった時間フィールドを追加したい</li>
+              <li>かかった時間フィールドから学習時間を計測・可視化したい</li>
+              <li>ポイントポイントでの知識レベルも可視化したい</li>
+            </ul>
+          </li>
+          <li>
+            フレームワークの勉強<br>
+            <ul>
+              <li>Vue.jsでDBのソースをフロント生成したい</li>
+              <li>React.jsでDBのソースをフロント生成したい</li>
+            </ul>
+          </li>
+          <li>
+            Firebaseの勉強<br>
+            <ul>
+              <li>認証画面をつけたい</li>
+              <li>書き込みできる権限の設定をしたい</li>
+            </ul>
+          </li>
         </ul>
-      </div>
-      <div class="section">
-        <h2>2021.7.9 FRI</h2>
-        <h3>学んだこと</h3>
-        <ul>
-          <li>async / await</li>
-          <li>日付（javascript）</li>
-          <li>日付（firestore）</li>
-          <li>日付の変換 firestore -> javascript</li>
-          <li>入力フォームの作成</li>
-          <li>ドキュメントの追加（ドキュメントID自動採番）</li>
-          <li>ドキュメントの追加・修正（ドキュメントIDの指定必須）</li>
-          <li>ドキュメントの修正（一部）</li>
-          <li>ドキュメントの削除</li>
-        </ul>
-        <p>Javascriptに記載</p>
-        <h4>構文</h4>
-        <code>
-          async function() {<br>
-            &nbsp;&nbsp;let variable = await do something;<br>
-          }
-        </code>
-        <p>
-          variableへの代入が完了するまで以降の処理が実行されない<br>
-          ただし他のfunctionの処理は並行して実行することが出来る
-        </p>
-        <h4>日付（javascript）</h4>
-        <code>new Date()</code>
-        <h4>日付（firestore）</h4>
-        <code>firebase.firestore.Timestamp.fromDate(new Date())</code>
-        <h4>日付の変換 firestore -> javascript</h4>
-        <code>toDate()</code>
-        <h4>ドキュメントの追加（単一・ドキュメントIDの指定無し）</h4>
-        <code>db.collection('id').add({object})</code>
-        <h4>ドキュメントの追加・修正（単一・ドキュメントIDの指定有り）</h4>
-        <code>db.collection('id').doc('id').set({object})</code>
-        <h4>ドキュメントの修正（一部）</h4>
-        <code>db.collection('id').doc('id').update({key:value})</code>
-        <h4>ドキュメントの削除</h4>
-        <p>フロントエンドからの削除は非推奨</p>
-      </div>
-      <div class="section">
-        <h2>2021.7.8 THU</h2>
-        <h3>学んだこと</h3>
-        <ul>
-          <li>フロントからコレクションは参照できない</li>
-          <li>ドキュメントの参照（単一）</li>
-          <li>ドキュメントの参照（全て）</li>
-          <li>ドキュメントの参照（絞り込み）</li>
-        </ul>
-        <p>JSに記載</p>
-        <h4>ドキュメントの参照（単一）</h4>
-        <code>db.collection('collection id').doc('doc id').get()</code>
-        <h4>ドキュメントの参照（複数）</h4>
-        <code>db.collection('collection id').get()</code>
-        <h4>ドキュメントの参照（単一）</h4>
-        <code>db.collection('collection id').where('condition','comparison','value').get()</code>
-      </div>
-      <div class="section">
-        <h2>2021.7.5 MON</h2>
-          <h3>学んだこと</h3>
-          <ul>
-            <li>Firestore</li>
-            <li>書き込み・読み込み</li>
-          </ul>
-          <p>JSファイルにて記載</p>
-          <h4>コレクションに追加/上書き</h4>
-          <code>db.collection('sample').doc(document).set(data)</code>
-          <span>※documentを指定する必要がある</span>
-          <h4>コレクションに追加(documentは自動採番され追加)</h4>
-          <code>db.collection('sample').add(data)</code>
-          <h4>コレクションを参照</h4>
-          <code>firebase hosting:channel:deploy PROJECT_ID</code>
-        </div>
-      <div class="section">
-        <h2>2021.7.4 SUN</h2>
-          <h3>学んだこと</h3>
-          <ul>
-            <li>プレビューからデプロイ</li>
-            <li>GitHub環境構築</li>
-            <li>デプロイ時のコミット</li>
-          </ul>
-          <p>参照：<a href="https://firebase.google.com/docs/hosting/test-preview-deploy?hl=ja">https://firebase.google.com/docs/hosting/test-preview-deploy?hl=ja</a></p>
-          <p></p>
-          <h4>プレビュー</h4>
-          <code>firebase emulators:start</code>
-          <span>プレビューページのURLはhttp://localhost:5000</span>
-          <h4>プレビューの終了</h4>
-          <code>ctrl &#043; c</code>
-          <h4>プレビューして共有</h4>
-          <code>firebase hosting:channel:deploy PROJECT_ID</code>
-          <h4>プレビューして共有の終了</h4>
-          <p>firebaseの管理画面 &gt; Hosting から</p>
-          <h4>デプロイ</h4>
-          <code>firebase deploy</code>
-          <p>コメント付き</p>
-          <code>firebase deploy -m "COMMENT HERE"</code>
       </div>
     </div>
   </body>
