@@ -52,12 +52,13 @@
       <div class="section">
         <h2>ドキュメントの追加・更新</h2>
         <div id="post_data">
-          <input name="doc_id" type="text" placeholder="ドキュメントID（未指定で新規追加）" autocomplete="on" list="doc_id">
+          <input class="data_field" name="id" type="text" placeholder="ドキュメントID（未指定で新規追加）" autocomplete="on" list="doc_id">
           <datalist id="doc_id"></datalist>
-          <input name="date" type="date" placeholder="見出し">
-          <input name="title" type="text" placeholder="見出し">
-          <textarea rows="10" cols="60" placeholder="コード"></textarea>
-          <input name="text" type="text" placeholder="説明・補足">
+          <input class="data_field" name="postdate" type="date" placeholder="見出し">
+          <input class="data_field" name="title" type="text" placeholder="見出し">
+          <textarea class="data_field" name="code" rows="10" cols="60" placeholder="コード"></textarea>
+          <input class="data_field" name="text" type="text" placeholder="説明・補足">
+          <input class="data_field" name="timetaken" type="number" placeholder="分単位で記入">
           <button>ドキュメントの追加・更新</button>
         </div>
       </div>

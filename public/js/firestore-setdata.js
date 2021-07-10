@@ -1,47 +1,42 @@
 $(function() {
-    let formDate = $('#post_data input[name="date"]'),
-        formDocument = $('#post_data input[name="doc_id"]'),
-        formTitle = $('#post_data input[name=title]'),
-        formCode = $('#post_data textarea'),
-        formText = $('#post_data input[name=text]'),
-        formButton = $('#post_data button');
+    let formDate = $('#post_data input[name="postdate"]'),
+        formDocument = $('#post_data input[name="id"]'),
+        formButton = $('#post_data button')
+        formAdditonal = [];
 
-    formDate.val(yyyy + '-' + mm + '-' + dd);　// 日付の初期値を本日に設定
+
+    formDate.val(javascriptDateToFormDate(new Date()));
+
     formDocument.change(function() {
         const target = documentList.find((obj) => {
             return (obj.id === $(this).val());
         });
-        // date変換が面倒なので日付の代入は後で
         if(target != undefined) {
-            // formDate.val(target.date);
-            formTitle.val(target.title);
-            formCode.val(target.code);
-            formText.val(target.text);
+            let thatDay = target.postdate.toDate();
+            formDate.val(javascriptDateToFormDate(thatDay));
+            for(let prop of additionalDataAttributes) {
+                formAdditonal.push($('[name="' + prop + '"]').val(target[prop]));
+            };
         } else {
-            // formDate.val();
-            formTitle.val();
-            formCode.val();
-            formText.val();
+            $('.data_field').not('[name="id"]').val('');
+            formDate.val(javascriptDateToFormDate(new Date()));
         };
     });
     formButton.click(function() {
-        let inputDate = formDate.val();
-        let javascriptDate = new Date(inputDate);
-        let firestoreDate = firebase.firestore.Timestamp.fromDate(javascriptDate)
         let inputData = {
-            postdate: firestoreDate,
-            title: formTitle.val(),
-            code: formCode.val(),
-            text: formText.val(),
+            postdate: formDateToFirebaseDate(formDate),
         };
+        for(let prop of additionalDataAttributes) {
+            inputData[prop] = $('[name="' + prop + '"]').val();
+        };
+
         if(formDocument.val() != '') {
-            console.log('データの更新完了');
-            console.log(inputData);
-            inputData.id = formDocument.val();
+            console.info('データの更新完了');
+            console.info(inputData);
             db_study.doc(formDocument.val()).set(inputData,{marge: true});
         } else {
-            console.log('データの新規追加完了');
-            console.log(inputData);
+            console.info('データの新規追加完了');
+            console.info(inputData);
             db_study.add(inputData);
         };
         // console.log(new Date(inputData.date));
@@ -50,4 +45,16 @@ $(function() {
     });
 });
 
+function javascriptDateToFormDate(day) {
+    let yyyy = day.getFullYear();
+    let mm = ("0"+(day.getMonth()+1)).slice(-2);
+    let dd = ("0"+day.getDate()).slice(-2);
+    return yyyy + '-' + mm + '-' + dd;　// 日付の初期値を本日に設定
+};
 
+function formDateToFirebaseDate(input) {
+    let inputDate = input.val();
+    let javascriptDate = new Date(inputDate);
+    let firestoreDate = firebase.firestore.Timestamp.fromDate(javascriptDate);
+    return firestoreDate;
+};
