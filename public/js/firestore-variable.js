@@ -10,6 +10,7 @@ var documentList = [];
 const requiredDataAttributes = [
     'id',
     'postdate',
+    'tags'
 ];
 
 const additionalDataAttributes = [

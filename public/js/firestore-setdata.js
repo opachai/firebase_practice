@@ -4,7 +4,6 @@ $(function() {
         formButton = $('#post_data button')
         formAdditonal = [];
 
-
     formDate.val(javascriptDateToFormDate(new Date()));
 
     formDocument.change(function() {
@@ -17,18 +16,35 @@ $(function() {
             for(let prop of additionalDataAttributes) {
                 formAdditonal.push($('[name="' + prop + '"]').val(target[prop]));
             };
+            initializeTags();
+            console.log();
+            if(target.tags != undefined) {
+                for(let tag of target.tags) {
+                    $('#tags input[name="' + tag + '"]').prop('checked',false);
+                    $('#tags input[name="' + tag + '"]').parent().addClass('active');
+                };
+            };
         } else {
             $('.data_field').not('[name="id"]').val('');
+            initializeTags();
             formDate.val(javascriptDateToFormDate(new Date()));
         };
     });
+
     formButton.click(function() {
+        let tagsChecked = [];
+        $('#tags label').each(function() {
+            if($(this).hasClass('active')) tagsChecked.push($(this).find('input').attr('name'));
+        });
         let inputData = {
             postdate: formDateToFirebaseDate(formDate),
+            tags: tagsChecked
         };
         for(let prop of additionalDataAttributes) {
             inputData[prop] = $('[name="' + prop + '"]').val();
         };
+
+        // console.log(inputData);
 
         if(formDocument.val() != '') {
             console.info('データの更新完了');
@@ -39,9 +55,6 @@ $(function() {
             console.info(inputData);
             db_study.add(inputData);
         };
-        // console.log(new Date(inputData.date));
-        // console.log(firebase.firestore.Timestamp.fromDate(new Date(inputData.date))); // firestoreの型
-        // console.log(firebase.firestore.Timestamp.fromDate(new Date(inputData.date)).toDate()); //javascriptの型に戻す
     });
 });
 
@@ -57,4 +70,11 @@ function formDateToFirebaseDate(input) {
     let javascriptDate = new Date(inputDate);
     let firestoreDate = firebase.firestore.Timestamp.fromDate(javascriptDate);
     return firestoreDate;
+};
+
+function initializeTags() {
+    $('#tags label input').each(function() {
+        $(this).prop('checked',false);
+        $(this).parent().removeClass('active');
+    });
 };

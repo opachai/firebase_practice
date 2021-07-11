@@ -24,7 +24,13 @@ async function orderDocuments(path,order,logic) {
     const querySnapshot = await path.orderBy(order,logic).get();
     console.log('複数ドキュメントから並び替えて取得');
     querySnapshot.forEach((doc) => {
-        console.log(doc.data().postdate.toDate(),doc.data().title, " => ",'ID: ' + doc.id);
+        console.log(
+            javascriptDateToFormDate(doc.data().postdate.toDate()),
+            doc.data().timetaken,
+            doc.data().title,
+             " => ",
+             'ID: ' + doc.id
+        );
         // console.log('Posted Date: ' + doc.data().postdate.toDate(), " => ", doc.data().title);
     });
 };

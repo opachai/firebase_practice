@@ -40,11 +40,25 @@
       .section #post_data {width:  100%;}
       input,textarea,button { width: 100%; padding: 10px; margin-bottom: 15px; display: block; box-sizing: border-box;}
       button {font-weight: bold;}
+      #tags {display: flex; flex-wrap: wrap; justify-content: space-between;}
+      #tags::after {content: ""; width: 30%;} 
+      #tags input[type="checkbox"] {display: none;}
+      #tags label {width: 31%; margin-bottom:  8px; text-align: center; padding: 10px; box-sizing: border-box; border: 1px solid #767676;color: #666;font-size: 12px;}
+      #tags label.active {background-color: #767676; color: #ffffff;}
       @media (max-width: 600px) {
         body, .section { margin-top: 0; background: white; box-shadow: none; }
         body { border-top: 16px solid #ffa100; }
       }
     </style>
+    <script>
+      $(function(){
+        $('#tags label input').each(function() {
+          $(this).change(function() {
+            $(this).parent().toggleClass('active');
+          });
+        });
+      });
+    </script>
   </head>
   <body>
     <h1>Firebase Practice</h1>
@@ -56,9 +70,15 @@
           <datalist id="doc_id"></datalist>
           <input class="data_field" name="postdate" type="date" placeholder="見出し">
           <input class="data_field" name="title" type="text" placeholder="見出し">
-          <textarea class="data_field" name="code" rows="10" cols="60" placeholder="コード"></textarea>
-          <input class="data_field" name="text" type="text" placeholder="説明・補足">
+          <textarea class="data_field" name="code" rows="5" cols="60" placeholder="コード"></textarea>
+          <textarea class="data_field" name="text" rows="5" cols="60" placeholder="説明・補足"></textarea>
           <input class="data_field" name="timetaken" type="number" placeholder="分単位で記入">
+          <div id="tags">
+            <label for="javascript"><input type="checkbox" id="javascript" name="javascript">Javascript</label>
+            <label for="firebase"><input type="checkbox" id="firebase" name="firebase">Firebase</label>
+            <label for="coding"><input type="checkbox" id="coding" name="coding">coding</label>
+            <label for="other"><input type="checkbox" id="other" name="other">other</label>
+          </div>
           <button>ドキュメントの追加・更新</button>
         </div>
       </div>
@@ -68,23 +88,40 @@
           <li>
             学習の可視化<br>
             <ul>
-              <li>ドキュメントごとにかかった時間フィールドを追加したい</li>
               <li>かかった時間フィールドから学習時間を計測・可視化したい</li>
               <li>ポイントポイントでの知識レベルも可視化したい</li>
             </ul>
           </li>
           <li>
-            フレームワークの勉強<br>
+            Firebaseの勉強<br>
             <ul>
-              <li>Vue.jsでDBのソースをフロント生成したい</li>
-              <li>React.jsでDBのソースをフロント生成したい</li>
+              <li>書き込みできる権限の設定をしたい</li>
+              <li>認証画面をつけたい</li>
+              <li>ストレージの利用</li>
             </ul>
           </li>
           <li>
-            Firebaseの勉強<br>
+            Javascript<br>
             <ul>
-              <li>認証画面をつけたい</li>
-              <li>書き込みできる権限の設定をしたい</li>
+              <li>Vue.jsでDBのソースをフロント生成したい</li>
+              <li>React.jsでDBのソースをフロント生成したい</li>
+              <li>flutter.js</li>
+              <li>express.js</li>
+            </ul>
+          </li>
+          <li>
+            アプリ
+            <ul>
+              <li>Kotlin(Android Studio)</li>
+              <li>Swift(Xcode)</li>
+            </ul>
+          </li>
+          <li>
+            データサイエンス
+            <ul>
+              <li>SQL</li>
+              <li>python(docker/django)</li>
+              <li>機械学習・AIライブラリ</li>
             </ul>
           </li>
         </ul>
