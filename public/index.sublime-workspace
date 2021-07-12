@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"toggle",
+				"toggleClass"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
 				"firesto",
 				"firestore-getdata.js"
 			],
@@ -24,10 +40,6 @@
 				"scroll"
 			],
 			[
-				"margin",
-				"margin-bottom"
-			],
-			[
 				"b",
 				"block"
 			],
@@ -44,10 +56,6 @@
 				"width\tproperty"
 			],
 			[
-				"ba",
-				"background-color\tproperty"
-			],
-			[
 				"z",
 				"z-index\tproperty"
 			],
@@ -58,10 +66,6 @@
 			[
 				"pa",
 				"padding-top\tproperty"
-			],
-			[
-				"text",
-				"text-align\tproperty"
 			],
 			[
 				"d",
@@ -186,10 +190,10 @@
 	],
 	"file_history":
 	[
-		"/C/Users/fkabasawa/Documents/GitHub/firebase_practice/public/js/firestore-variable.js",
-		"/C/Users/fkabasawa/Documents/GitHub/firebase_practice/public/js/firestore-setdata.js",
 		"/C/Users/fkabasawa/Documents/GitHub/firebase_practice/public/index.html",
+		"/C/Users/fkabasawa/Documents/GitHub/firebase_practice/public/js/firestore-setdata.js",
 		"/C/Users/fkabasawa/Documents/GitHub/firebase_practice/public/js/firestore-getdata.js",
+		"/C/Users/fkabasawa/Documents/GitHub/firebase_practice/public/js/firestore-variable.js",
 		"/C/Users/fkabasawa/Documents/GitHub/firebase_practice/public/js/firestore-realtimeupdate.js",
 		"/C/Users/fkabasawa/Documents/GitHub/firebase_practice/public/js/org-firestore.js",
 		"/C/Users/fkabasawa/Desktop/vue.html",
@@ -317,7 +321,7 @@
 	],
 	"find":
 	{
-		"height": 49.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -331,6 +335,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"flutter",
+			"coding",
+			"firebase",
+			"tag_",
+			"ag_javascript",
+			"\"\"",
 			"var",
 			"console.log",
 			"        'key': ",
@@ -452,13 +462,7 @@
 			"（複数回答可）",
 			"05",
 			"%",
-			".grapgh_.",
-			"grapgh_",
-			"8",
-			".grapgh_ ",
-			"bar_\"",
-			"</span",
-			"grapgh_ ul"
+			".grapgh_."
 		],
 		"highlight": true,
 		"in_selection": false,
